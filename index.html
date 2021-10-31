@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GitHub Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about me</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">github page</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>Shavira Mala Tsania</h1>
+        <h2>Teknologi Sains Data - Universitas Airlangga Surabaya</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <section>
+            <h2>Laporan Praktikum</h2>
+        </section>
+
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fas fa-cloud-download-alt"></i>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>GitHub Pages.</h1>
+        <section>
+            <h2>Apa itu GitHub Pages?</h2>
+            <p>
+                GitHub Pages adalah layanan hosting untuk website statis yang bisa ambil file (HTML, CSS, JavaScript) langsung dari repository di GitHub, lalu run file tersebut melalui proses pembuatan hingga menjadi website. Untuk mengetahui apakah website dibuat memakai GitHub Pages yaitu dengan melihat akhiran pada URLnya, yaitu terdapat github.io.
+            </p>
+            <h2>Apa Keuntungan Menggunakan GitHub?</h2>
+            <p>
+                1. Tidak perlu setup server karena GitHub sendiri yang akan menjadi host GitHub Page kita.
+                <br>
+                <br>
+                2. Tidak perlu pusing memikirkan keamanan karena GitHub Page hanya memperbolehkan kita untuk menggunakan beberapa tools saja.
+                <br>
+                <br>
+                3. Cepat deploy karena kita tinggal membuat repository dengan nama username.github.io lalu ketikkan kode HTML atau Markdown pada laptop kemudian push ke repository tersebut.
+            </p>
+            <h2>Gimana Cara Membuat GitHub Page?</h2>
+            <p>
+                Langkah-langkah membuat github page:
+                <br>
+                1. Download Git Bash, setelah itu run code dibawah ini <p style="color:#ee82ee;">&nbsp;&nbsp;&nbsp; git config --global user.name "nama kalian" <br><br>&nbsp;&nbsp;&nbsp;git config --global user.email "nama_email@email.com"</p>&nbsp;&nbsp;&nbsp; Code di atas berfungsi untuk set username dan email kalian
+                <br>
+                <br>
+                2. Siapkan kerangka website sesuai keinginan, bisa menggunakan template yang tersedia online ataupun berkreasi sendiri sesuka kalian. 
+                <br>
+                <br>
+                3. Pastikan kalian telah memiliki akun GitHub. Kalian bisa membuat akunnya <a href="https://github.com/" target="_blank">disini</a>.
+                <br>
+                <br>
+                4. Membuat repository baru dengan nama repository: <p style="color:#ee82ee;">&nbsp;&nbsp;&nbsp;&nbsp;<i>username</i>.github.io</p>". 
+                <br>
+                5. Membuka Git Bash lalu clone repository GitHub kalian dengan cara <p style="color:#ee82ee;">&nbsp;&nbsp;&nbsp;&nbsp;"git clone https://github.com/<i>username</i>/<i>username</i>.github.io"</p> &nbsp;&nbsp;&nbsp;&nbsp;Klik <i>Enter</i> !
+                <br>
+                <br>
+                6. Masukkan file kerangka website kalian (HTML, CSS, JavaScript) ke folder yang baru saja kalian buat di atas.
+                <br>
+                <br>
+                7. Pindah ke repository local kalian dengan cara <p style="color:#ee82ee;">&nbsp;&nbsp;&nbsp;&nbsp;"cd<i>username</i>.github.io"</p>
+                <br>
+                8. Kita mau masukkan file-file ini ke <i>staging area</i>. Caranya begini: <p style="color:#ee82ee;">&nbsp;&nbsp;&nbsp;&nbsp;"git add --all"</p> &nbsp;&nbsp;&nbsp;&nbsp; Nah dengan code tadi, kita sudah berhasil masukkin <b>seluruh</b> file ke <i>staging area</i>.
+                <br>
+                <br>
+                9. Commit file-file yang ada di <i>staging area</i>. Untuk commit bisa dilakukan dengan cara <p style="color:#ee82ee;">&nbsp;&nbsp;&nbsp;&nbsp;"git commit --m "(bisa kalian isi dengan pesan bebas)"</p> &nbsp;&nbsp;&nbsp;&nbsp; Nah, code barusan itu berfungsi untuk membuat record perubahan apa saja yang sudah kita lakukan. 
+                <br>
+                <br>
+                10. Setelah commit, kita harus memasukkan file-file tadi ke repository kita di GitHub, dengan cara <p style="color:#ee82ee;">&nbsp;&nbsp;&nbsp;&nbsp;"git push -u origin main"</p> &nbsp;&nbsp;&nbsp;&nbsp; Code tadi akan meng-<i>update</i> repository GitHub kita dan menyamakannya dengan repository local kita.
+                <br>
+                <br>
+                11. Refresh repository kalian di GitHub! Kalo semua file udah keupload di sana, langsung deh coba &nbsp;&nbsp;&nbsp;&nbsp;buka website baru kalian di browser!<p style="font-size:150%;">&nbsp;&nbsp;&nbsp;&nbsp; </p>
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+            </div>
+            <button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <h2>about me</h2>
+                <p>
+                    Hallo! Salam kenal aku Shavira Mala Tsania biasa dipanggil Vira. Aku lahir di Probolinggo pada 8 April 2000. Sekarang tinggal di Surabaya karena sedang berkuliah di Universitas Airlangga Surabaya. Aku sedang berkuliah di Program Studi Teknologi Sains Data Universitas Airlangga angkatan 2020. 
+                </p>
+                <p>
+                    Alasan aku memilih program studi tersebut karena sedang tertarik dengan dunia data. Ilmu sains data mulai sering dibicarakan akhir-akhir ini sehingga aku penasaran ilmu ini. Untuk menjadi seorang data scientist, selain berkuliah di prodi yang berhubungan dengan sains data, saya juga cukup aktif dan berambisi dalam mengikuti kompetisi maupun course mengenai sains data.
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <table>
+                        <tr>
+                            <td class="animated zoomIn" style="animation-delay:1.4s;"><a href="https://twitter.com/akumauliburan" class="social" target="_blank"><i class="fab fa-twitter"></i></a></td>
+                            <td class="animated zoomIn" style="animation-delay:1.6s;"><a href="https://instagram.com/shaviramt"class="social" target="_blank"><i class="fab fa-instagram"></i></a></td>
+                            <td class="animated zoomIn" style="animation-delay:1.8s;"><a href="https://www.linkedin.com/in/shavira-m-543771109/" class="social" target="_blank"><i class="fab fa-linkedin"></i>
+                        </tr>
+                </table>
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            made on earth by a human <br> <a href="https://imfunniee.github.io">imfunny</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
